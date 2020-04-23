@@ -1,0 +1,36 @@
+{
+  "name": "homebridge-litter-robot-connect",
+  "version": "1.0.0",
+  "description": "Litter-Robot Connect Homebridge Plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ryanleesmith/homebridge-litter-robot-connect.git"
+  },
+  "keywords": [
+    "homebridge-plugin",
+    "homebridge",
+    "litter-robot"
+  ],
+  "author": "Ryan Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ryanleesmith/homebridge-litter-robot-connect/issues"
+  },
+  "homepage": "https://github.com/ryanleesmith/homebridge-litter-robot-connect#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "jsonwebtoken": "^8.5.1",
+    "node-persist": "^3.0.5",
+    "querystring": "^0.2.0"
+  },
+  "engines": {
+    "homebridge": ">=0.4.53",
+    "node": ">=7.0.0"
+  },
+  "preferGlobal": true
+}

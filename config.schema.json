@@ -1,0 +1,70 @@
+{
+    "pluginAlias": "LitterRobotPlatform",
+    "pluginType": "platform",
+    "singular": true,
+    "headerDisplay": "This plugin supports the Litter-Robot 3 Connect.",
+    "footerDisplay": "For help please visit the [GitHub repository](https://github.com/ryanleesmith/homebridge-litter-robot-connect).",
+    "schema": {
+        "type": "object",
+        "properties": {
+            "username": {
+                "title": "Email",
+                "type": "string",
+                "placeholder": "kitty@litter-robot.com",
+                "required": true,
+                "format": "email",
+                "description": "Your Litter-Robot account email."
+            },
+            "password": {
+                "title": "Password",
+                "type": "string",
+                "required": true,
+                "options": {
+                    "hidden": true
+                },
+                "description": "Your Litter-Robot account password."
+            },
+            "hideRobotAccessory": {
+                "title": "Hide Robot Accessory",
+                "type": "boolean",
+                "description": "Hides the accessory which provides general control and status updates of the Litter-Robot."
+            },
+            "hideNightlightAccessory": {
+                "title": "Hide Nightlight Accessory",
+                "type": "boolean",
+                "description": "Hides the accessory which allows you to turn on and off the nightlight in the Litter-Robot."
+            },
+            "hideOccupancyAccessory": {
+                "title": "Hide Occupancy Accessory",
+                "type": "boolean",
+                "description": "Hides the accessory which indicates your pet entered the Litter-Robot."
+            }
+        }
+    },
+    "layout": [
+        {
+            "type": "flex",
+            "flex-flow": "row wrap",
+            "items": [
+                {
+                    "key": "username",
+                    "type": "email"
+                },
+                {
+                    "key": "password",
+                    "type": "password"
+                }
+            ]
+        },
+        {
+            "type": "fieldset",
+            "title": "Configuration",
+            "expandable": true,
+            "items": [
+                "hideRobotAccessory",
+                "hideNightlightAccessory",
+                "hideOccupancyAccessory"
+            ]
+        }
+    ]
+}
