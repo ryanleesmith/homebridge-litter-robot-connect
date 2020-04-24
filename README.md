@@ -4,6 +4,8 @@ Litter-Robot Connect [Homebridge](https://github.com/nfarina/homebridge) Plugin
 
 Integrates your Litter-Robot device with HomeKit. Enables monitoring of waste level, occupancy, current cycling status, as well as ability to turn on/off the nightlight, run a manual cycle, and reset the waste level gauge.
 
+Consider using [Homebridge Config UI X](https://github.com/oznu/homebridge-config-ui-x) to manage the installation and configuration steps.
+
 # Installation
 
 1. Install homebridge using: `npm install -g homebridge`
@@ -28,9 +30,9 @@ Your username and password are not stored, they are only used to generate an aut
 
 Optional fields:
 
-* `"hideRobotAccessory"`: `"true/false"` // Optionally hides the main Litter-Robot accessory controls
-* `"hideNightlightAccessory"`: `"true/false"` // Optionally hides the Litter-Robot nightlight switch
-* `"hideOccupancyAccessory"`: `"true/false"` // Optionally hides the Litter-Robot occupancy sensor
+* `"hideRobotAccessory"`: `"true/false"` - Optionally hides the main Litter-Robot accessory controls
+* `"hideNightlightAccessory"`: `"true/false"` - Optionally hides the Litter-Robot nightlight switch
+* `"hideOccupancyAccessory"`: `"true/false"` - Optionally hides the Litter-Robot occupancy sensor
 
 # How It Works
 With all accessories enabled, this plugin will query the Litter-Robot API and generate the following accessories for your usage:
