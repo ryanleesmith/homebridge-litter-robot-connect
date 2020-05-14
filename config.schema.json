@@ -38,6 +38,12 @@
                 "title": "Hide Occupancy Accessory",
                 "type": "boolean",
                 "description": "Hides the accessory which indicates your pet entered the Litter-Robot."
+            },
+            "pollingFrequency": {
+                "title": "Polling Frequency",
+                "type": "integer",
+                "description": "Adjusts how frequently (in seconds) the platform will poll the Litter-Robot API for current status.",
+                "default": 5
             }
         }
     },
@@ -63,7 +69,8 @@
             "items": [
                 "hideRobotAccessory",
                 "hideNightlightAccessory",
-                "hideOccupancyAccessory"
+                "hideOccupancyAccessory",
+                "pollingFrequency"
             ]
         }
     ]
