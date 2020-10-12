@@ -28,7 +28,6 @@
   "dependencies": {
     "axios": "^0.19.2",
     "jsonwebtoken": "^8.5.1",
-    "node-persist": "^3.0.5",
     "querystring": "^0.2.0"
   },
   "engines": {
