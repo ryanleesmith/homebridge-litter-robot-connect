@@ -28,13 +28,14 @@ Configuration sample (edit `~/.homebridge/config.json`):
 ]
 ```
 
-Your username and password are not stored, they are only used to generate an auth token which is used for all subsequent requests. This auth token is stored locally on disk in accordance with Homebridge rules, and expires every hour (Litter-Robot's configuration). A refresh token is used to request new auth tokens upon expiry.
+Your username and password are not stored, they are only used to generate an auth token which is used for all subsequent requests. This auth token is not stored either, and expires every hour (Litter-Robot's configuration). A refresh token is used to request new auth tokens upon expiry.
 
 Optional fields:
 
 * `"hideRobotAccessory"`: `"true/false"` - Optionally hides the main Litter-Robot accessory controls
 * `"hideNightlightAccessory"`: `"true/false"` - Optionally hides the Litter-Robot nightlight switch
 * `"hideOccupancyAccessory"`: `"true/false"` - Optionally hides the Litter-Robot occupancy sensor
+* `"hideTrayAccessory"`: `"true/false"` - **NEW** Optionally hides the Litter-Robot tray full sensor (defaults to true)
 
 # How It Works
 With all accessories enabled, this plugin will query the Litter-Robot API and generate the following accessories for your usage:

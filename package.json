@@ -1,6 +1,6 @@
 {
   "name": "homebridge-litter-robot-connect",
-  "version": "1.1.3",
+  "version": "1.2.0",
   "description": "Litter-Robot Connect Homebridge Plugin",
   "main": "index.js",
   "bin": {
