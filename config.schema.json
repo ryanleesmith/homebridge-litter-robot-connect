@@ -39,6 +39,12 @@
                 "type": "boolean",
                 "description": "Hides the accessory which indicates your pet entered the Litter-Robot."
             },
+            "hideTrayAccessory": {
+                "title": "Hide Tray Accessory",
+                "type": "boolean",
+                "description": "Hides the accessory which indicates your Litter-Robot tray is full.",
+                "default": true
+            },
             "pollingFrequency": {
                 "title": "Polling Frequency",
                 "type": "integer",
@@ -70,6 +76,7 @@
                 "hideRobotAccessory",
                 "hideNightlightAccessory",
                 "hideOccupancyAccessory",
+                "hideTrayAccessory",
                 "pollingFrequency"
             ]
         }
